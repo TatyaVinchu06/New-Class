@@ -13,7 +13,7 @@
 
     ### For Teachers
     - **Faculty Dashboard**: Overview of active batches, pending reviews, and schedule.
-    - **Class Management**: specific views for each class (e.g., DBMS, DAA) with stream/announcements.
+    - **Class Management**: specific views for each class (e.g., DBMS, DAA) with stream/announcements.x
     - **Assignment Management**: Create, edit, and grade assignments with file upload support.
     - **Student Tracking**: Monitor student progress and submissions.
 

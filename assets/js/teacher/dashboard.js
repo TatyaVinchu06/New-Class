@@ -31,33 +31,13 @@ const mySubjects = teacherMeta.subjects || [];
 console.log('Teacher Dashboard Loaded. Subjects:', mySubjects);
 
 // Filter "My Classes" list
-const classItems = document.querySelectorAll('.feed-item');
-classItems.forEach(item => {
-    const text = item.innerText;
-    const matches = mySubjects.some(sub => text.includes(sub) || text.includes('Web Dev') || text.includes('DBMS'));
-    if (!matches && !text.includes('Department Meeting')) {
-        // item.style.display = 'none'; // Optional: hide irrelevant classes
-    }
-});
+// Filter "My Classes" list - DISABLED to show all demo classes as requested
+// const classItems = document.querySelectorAll('.feed-item');
+// classItems.forEach(item => { ... });
 
 console.log('Teacher Dashboard Loaded');
 
-// Add interactivity to Quick Action buttons
-const quickActions = document.querySelectorAll('.quick-action-btn');
-quickActions.forEach(btn => {
-    btn.addEventListener('click', function () {
-        const actionText = this.querySelector('span').innerText;
 
-        if (actionText === 'Announce') {
-            const msg = prompt("Enter announcement for CS301:");
-            if (msg) alert("Announcement posted to student stream!");
-        } else if (actionText === 'New Assn.') {
-            window.location.href = 'assignments.html';
-        } else {
-            alert(`Action triggered: ${actionText} (Demo Only)`);
-        }
-    });
-});
 
 // Animate stats numbers on load
 const statsNumbers = document.querySelectorAll('.t-stat-info h3');
@@ -75,7 +55,6 @@ gradeButtons.forEach(btn => {
         btn.style.color = '#10b981';
         btn.disabled = true;
     });
-});
 });
 
 function animateValue(obj, start, end, duration) {

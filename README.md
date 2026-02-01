@@ -63,3 +63,5 @@
     - [ ] Backend integration (Node.js/Python).
     - [ ] Real-time Socket.io messaging.
     - [ ] Database implementation (MongoDB/SQL).
+
+    © 2026 Om Bhamare. All rights reserved.
